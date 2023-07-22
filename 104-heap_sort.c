@@ -2,7 +2,7 @@
 
 
 /**
- * check_tree - M E 
+ * check_tree - check the tree function
  * @arr: ptr to array
  * @size: size of ptr
  * @init_size: original size of arr
