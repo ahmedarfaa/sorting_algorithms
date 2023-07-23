@@ -1,12 +1,12 @@
 #include "sort.h"
 
 /**
- * swap_items - Swaps two items in An-array.
+ * Swap_items - Swaps two items in An-array.
  * @array: array to modify.
  * @l: index of the left Item.
  * @r: index of the right Item.
  */
-void swap_items(int *array, size_t l, size_t r)
+void Swap_items(int *array, size_t l, size_t r)
 {
 	int temp;
 
@@ -19,13 +19,13 @@ void swap_items(int *array, size_t l, size_t r)
 }
 
 /**
- * quick_sort_range_lomuto - Sorts a sub array
+ * Quick_sort_range - Sorts a sub array
  * @array: the sub-array.
  * @low: starting position of the sub-array.
  * @high: ending position of the sub-array.
  * @size: length of the array.
  */
-void quick_sort_range_lomuto(int *array, size_t low, size_t high, size_t size)
+void Quick_sort_range(int *array, size_t low, size_t high, size_t size)
 {
 	size_t k, i;
 	int pvt;
@@ -40,7 +40,7 @@ void quick_sort_range_lomuto(int *array, size_t low, size_t high, size_t size)
 		{
 			if (k != i)
 			{
-				swap_items(array, k, i);
+				Swap_items(array, k, i);
 				print_array(array, size);
 			}
 			k++;
@@ -48,13 +48,13 @@ void quick_sort_range_lomuto(int *array, size_t low, size_t high, size_t size)
 	}
 	if (k != high)
 	{
-		swap_items(array, k, high);
+		Swap_items(array, k, high);
 		print_array(array, size);
 	}
 	if (k - low > 1)
-		quick_sort_range_lomuto(array, low, k - 1, size);
+		Quick_sort_range(array, low, k - 1, size);
 	if (high - k > 1)
-		quick_sort_range_lomuto(array, k + 1, high, size);
+		Quick_sort_range(array, k + 1, high, size);
 }
 
 /**
@@ -67,6 +67,6 @@ void quick_sort(int *array, size_t size)
 {
 	if (array != NULL)
 	{
-		quick_sort_range_lomuto(array, 0, size - 1, size);
+		Quick_sort_range(array, 0, size - 1, size);
 	}
 }

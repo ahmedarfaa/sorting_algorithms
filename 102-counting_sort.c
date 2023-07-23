@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * counting_sort - sorts an arr of integers in ascending sort
  * @arr: pointer to array

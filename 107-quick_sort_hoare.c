@@ -2,12 +2,12 @@
 
 
 /**
-*swap - the pstions of two elements into an arr
+*Swap - pstions of two elements into an arr
 *@arr: array
 *@itm1: arr element
 *@itm2: arr element
 */
-void swap(int *arr, ssize_t itm1, ssize_t itm2)
+void Swap(int *arr, ssize_t itm1, ssize_t itm2)
 {
 	int tmp;
 
@@ -39,7 +39,7 @@ int hoare_partition(int *arr, int first, int last, int size)
 		} while (arr[finder] > pvt);
 		if (current >= finder)
 			return (current);
-		swap(arr, current, finder);
+		Swap(arr, current, finder);
 		print_array(arr, size);
 	}
 }
