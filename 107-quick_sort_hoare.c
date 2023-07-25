@@ -2,10 +2,10 @@
 
 
 /**
-*Swap - pstions of two elements into an arr
+*Swap - a fn that swaps two elements
 *@arr: array
-*@itm1: arr element
-*@itm2: arr element
+*@itm1: item 1
+*@itm2: item 2
 */
 void Swap(int *arr, ssize_t itm1, ssize_t itm2)
 {
@@ -16,12 +16,12 @@ void Swap(int *arr, ssize_t itm1, ssize_t itm2)
 	arr[itm2] = tmp;
 }
 /**
- *hoare_partition - hoare partition sorting scheme implementation
+ *hoare_partition - a fn that implement the hoare way
  *@arr: array
- *@first: first arr element
- *@last: last arr element
- *@size: size arr
- *Return: return the pstion of the last element sorted
+ *@first: first element
+ *@last: last eleement
+ *@size: array size
+ *Return: position of last element
  */
 int hoare_partition(int *arr, int first, int last, int size)
 {
@@ -44,11 +44,11 @@ int hoare_partition(int *arr, int first, int last, int size)
 	}
 }
 /**
- *qk_sort - qucksort algorithm implementation
+ *qk_sort - a function that implements the qksort
  *@arr: array
- *@frst: first arr element
- *@lst: last arr element
- *@size: arr size
+ *@frst: first element
+ *@lst: last element
+ *@size: size of array
  */
 void qk_sort(int *arr, ssize_t frst, ssize_t lst, int size)
 {

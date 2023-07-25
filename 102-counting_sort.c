@@ -1,9 +1,9 @@
 #include "sort.h"
 
 /**
- * counting_sort - sorts an arr of integers in ascending sort
- * @arr: pointer to array
- * @size: size of the arr
+ * counting_sort - a function that sorts an arr of integers in ascending way
+ * @arr: array
+ * @size: size of array
  **/
 void counting_sort(int *arr, size_t size)
 {

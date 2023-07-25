@@ -1,10 +1,10 @@
 #include "sort.h"
 
 /**
- * Swap_items - Swaps two items in An-array.
- * @array: array to modify.
- * @l: index of the left Item.
- * @r: index of the right Item.
+ * Swap_items - a function that Swaps items in the array.
+ * @array: array.
+ * @l: the left item indx.
+ * @r: the right item indx.
  */
 void Swap_items(int *array, size_t l, size_t r)
 {
@@ -19,11 +19,11 @@ void Swap_items(int *array, size_t l, size_t r)
 }
 
 /**
- * Quick_sort_range - Sorts a sub array
+ * Quick_sort_range - a function that sorts the sub-array
  * @array: the sub-array.
- * @low: starting position of the sub-array.
- * @high: ending position of the sub-array.
- * @size: length of the array.
+ * @low: starting indx.
+ * @high: ending indx.
+ * @size: array size.
  */
 void Quick_sort_range(int *array, size_t low, size_t high, size_t size)
 {

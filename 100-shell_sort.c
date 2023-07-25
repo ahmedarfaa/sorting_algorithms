@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * _Swap - swaped 2 values.
+ * _Swap - swaps 2 values.
  * @arr: arr for swap values.
  * @x: First index
  * @y: Second index
